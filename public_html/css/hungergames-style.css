@@ -1,0 +1,138 @@
+ /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+	 body {
+         text-align: center;
+         background-color: #faedcd;
+         padding-top: 200px;
+         padding-bottom: 20px;}
+	  h1 { 
+	       font-family: 'Orbitron', sans-serif;
+               text-align: center;
+		 } 
+	  h2 {
+	       font-family: 'Noto Serif Display', serif;
+		   color: #b3443c;
+		   text-align: center; 
+		 }
+	  h3 {
+	       font-family: 'El Messiri', serif;
+		   color: #723d47;
+	       font-size: 25px;
+		 }
+	  img {
+               display: block;
+               max-width:100%;
+               margin-left: auto;
+               margin-right: auto;
+              }     
+         .split {
+                 display: flex;
+                 flex-direction: column;
+              }   
+              @media (min-width: 40em) {
+                  .split{
+                      flex-direction: row;
+                  }
+                  }
+              
+              .bg-purple{
+              background-color:#723d47;
+              color:#faedcd;}
+              .bg-accent{
+              background-color:#b3443c;
+              color:#faedcd;}
+              
+          .container {
+                  margin-inline: auto;
+                  width: min(90%, 70.5rem);     
+              }
+         section {
+                  padding:3rem 0;
+              }
+	    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #2d2125;
+        padding: 10px;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+		font-family: 'El Messiri', sans-serif;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+		text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+		font-family: 'El Messiri', sans-serif;
+    }
+	p {
+	font-family: 'El Messiri', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	}
+	 // Demo animation
+	span:hover {
+		background-size: 50% 50%;
+	}
+	
+    .marquee {
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+        }
+        
+        .marquee span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+
+
